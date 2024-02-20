@@ -2,6 +2,7 @@ package com.sistema.autenticacao;
 
 import java.util.Scanner;
 
+//Cadastro.java
 public class Cadastro {
 
     public static void cadastro(){
@@ -11,14 +12,14 @@ public class Cadastro {
         Password senha = new Password();
         
         //ID de usuário
-        System.out.println("Usuario: ");
+        System.out.println("Insira seu nome de usuario: ");
         usuario.setUsuario(myObj.nextLine());
-        RuntimeException.ErrorUserID(usuario);
+        RuntimeException.ErroUser(usuario);
 
         //senha de usuário
-        System.out.println("Senha: ");
+        System.out.println("Insira sua senha, a senha deve contar pelo menos um caracter maiusculo, numero e caracter especial: ");
         senha.setsenha(myObj.nextLine());
-        RuntimeException.ErrorUserPassword(senha);
+        RuntimeException.ErroSenha(senha);
 
         myObj.close();
     }

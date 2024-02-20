@@ -1,5 +1,6 @@
 package com.sistema.autenticacao;
 
+//Password.java
 public class Password {
     String senha;
 
@@ -10,4 +11,5 @@ public class Password {
     public void setsenha(String senha){
         this.senha = senha;
     }
+
 }

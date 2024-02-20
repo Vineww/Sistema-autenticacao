@@ -1,5 +1,6 @@
 package com.sistema.autenticacao;
 
+//User.java
 public class User {
     private String usuario;
 
